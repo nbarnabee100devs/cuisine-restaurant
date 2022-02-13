@@ -1,17 +1,72 @@
-/*
-Main background_ linear gradient and foodjumble image
-
-need facebook, twitter and instagram icons
-
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
 
-button,
-input {
-  border: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   background: none;
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1.5;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+/* -----------
+  general styles
+  -----------*/
+
+:root {
+  --orange: #ff8800;
+  --light_orange: #ffaa4d;
 }
 
 .stack > * + * {
@@ -19,13 +74,99 @@ input {
   margin-top: 5%;
 }
 
+.card > * + * {
+  display: block;
+  margin-top: 2%;
+}
+
+.spaced > * + * {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+/* -----------
+  general fonts and colors
+  -----------*/
+
+  h1,
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  blockquote {
+    font-style: italic;
+  }
+
+
+  /* -----------
+    backgrounds & colors
+  -----------*/
+
+  header,
+  .cuisine,
+  .hours,
+  .testimonials {
+    background: #f2f9f9;
+  }
+
+  .cuisine {
+    background-image: linear-gradient(90deg, #dbe6eb 20%, #f2f9f9 50%);
+  }
+
+  .testimonials,
+  .hours {
+    background-image: linear-gradient(90deg, #dbe6eb 5%, #f2f9f9 12%);
+  }
+
+  header {
+    background: url("./images/foodjumble.jpg") no-repeat 50%;
+  }
+
+  .menu-button {
+    background-color: orange;
+    background: linear-gradient(to right, var(--orange) 75%, var(--light_orange) 0%);
+  }
+
+  h3 {
+    color: var(--light_orange);
+  }
+
+/* -----------
+  header
+  -----------*/
+
+  
+
+
 .hero {
   width: 50%;
 }
 
 
-.menu-button {
-  /* gradiant background, background image (pointer arrow) */
-  background-color: orange;
-  background: linear-gradiant(to right, darkorange 75%, orange 0%);
+
+
+.cuisine > ul:last-child > li {
+ float: left;
+ width: 20%;
+}
+
+div {
+  width: 80%;
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+iframe {
+  border: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
