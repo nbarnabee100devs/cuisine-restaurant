@@ -1,0 +1,31 @@
+/*
+Main background_ linear gradient and foodjumble image
+
+need facebook, twitter and instagram icons
+
+
+*/
+
+button,
+input {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stack > * + * {
+  display: block;
+  margin-top: 5%;
+}
+
+.hero {
+  width: 50%;
+}
+
+
+.menu-button {
+  /* gradiant background, background image (pointer arrow) */
+  background-color: orange;
+  background: linear-gradiant(to right, darkorange 75%, orange 0%);
+}
