@@ -15,7 +15,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, button {
   background: none;
 	margin: 0;
 	padding: 0;
@@ -37,6 +37,11 @@ body {
 
 ol, ul {
 	list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 blockquote, q {
@@ -69,6 +74,11 @@ table {
   --light_orange: #ffaa4d;
 }
 
+.stack {
+  margin-block: 5%;
+  padding-bottom: 5%;
+}
+
 .stack > * + * {
   display: block;
   margin-top: 5%;
@@ -81,8 +91,9 @@ table {
 
 .spaced > * + * {
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 1.5rem;
 }
+
 
 /* -----------
   general fonts and colors
@@ -124,8 +135,39 @@ table {
     background-image: linear-gradient(90deg, #dbe6eb 5%, #f2f9f9 12%);
   }
 
-  header {
-    background: url("./images/foodjumble.jpg") no-repeat 50%;
+  h3 {
+    color: var(--light_orange);
+  }
+
+/* -----------
+  header/nav
+  -----------*/
+
+header {
+  background: url("./images/foodjumble.jpg") no-repeat 50%;
+}
+
+.hero {
+  width: 50%;
+  margin-left: 10%;
+}
+
+form {
+  font-size: 0;
+}
+
+.hero li {
+  display: inline-block;
+}
+
+/* -----------
+  story
+  -----------*/
+
+  article {
+    width: 50%;
+    margin-left: 40%;
+    margin-right: 10;
   }
 
   .menu-button {
@@ -133,40 +175,45 @@ table {
     background: linear-gradient(to right, var(--orange) 75%, var(--light_orange) 0%);
   }
 
-  h3 {
-    color: var(--light_orange);
-  }
-
-/* -----------
-  header
+  /* -----------
+  cuisine
   -----------*/
 
-  
+.cuisine {
+  padding-block: 5%;
+  margin-bottom: 0;
+}
 
+.foodPorn {
+  width: 90%;
+  margin-inline: auto;
+  text-align: center;
+}
 
-.hero {
-  width: 50%;
+.gallery > li {
+  display: inline-block;
+}
+
+.gallery > li > img {
+  width: 20vw;
+  height: 20vw;
 }
 
 
+   /* -----------
+  hours
+  -----------*/
 
+  .hours {
+    padding-block: 5%;
+    margin-block: 0;
+  }
 
-.cuisine > ul:last-child > li {
- float: left;
- width: 20%;
-}
+  /* -----------
+  testimonials
+  -----------*/
 
-div {
-  width: 80%;
-  height: 0;
-  position: relative;
-  padding-bottom: 56.25%;
-}
-
-iframe {
-  border: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
+  .testimonials  {
+    padding-block: 5%;
+    margin-block: 0;
+  }
