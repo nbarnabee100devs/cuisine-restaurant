@@ -108,11 +108,18 @@ table {
   general fonts and colors
   -----------*/
 
+  body * {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+  }
+
+
+
   h1,
   h2 {
-    font-weight: bold;
     font-size: 2rem;
     line-height: 1.5;
+    font-family: 'Yeseva One', serif;
   }
 
   h2 {
