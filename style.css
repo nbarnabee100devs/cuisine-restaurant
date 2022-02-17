@@ -79,8 +79,7 @@ table {
 }
 
 .stack {
-  margin-block: 5%;
-  padding-bottom: 5%;
+  padding-block: 10%;
 }
 
 .stack > * + * {
@@ -98,9 +97,9 @@ table {
   margin-top: 2%;
 }
 
-.spaced > * + * {
+.spaced * {
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 
 
@@ -112,8 +111,6 @@ table {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
   }
-
-
 
   h1,
   h2 {
@@ -161,20 +158,36 @@ table {
 
 header {
   background: url("./images/foodjumble.jpg") no-repeat 50%;
+  background-position: 75% 5%;
 }
+
+header > a:first-of-type {
+  margin-top: 0.5%;
+}
+
+header > a:first-of-type {
+  float: left;
+  padding-left: 10%;
+  margin-top: 1%;
+}
+
+header > nav {
+  float: right;
+  padding-right: 5%;
+  margin-top: 1%;
+}
+
 
 .hero {
   width: 50%;
   margin-left: 10%;
+  padding-top: 5%;
 }
 
 form {
   font-size: 0;
 }
 
-.hero li {
-  display: inline-block;
-}
 
 /* -----------
   story
